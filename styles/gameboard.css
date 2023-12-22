@@ -1,5 +1,12 @@
 .gameboard {
   height: 90%;
-  width: 90%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  height: 120px;
+  width: 100%;
   background-color: aquamarine;
+  justify-content: flex-end;
 }
