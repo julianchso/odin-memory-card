@@ -1,0 +1,14 @@
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 25%;
+  width: 25%;
+  row-gap: 30px;
+  column-gap: 30px;
+  background-color: aqua;
+  align-items: center;
+}
+
+.high-score {
+}

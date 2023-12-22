@@ -1,4 +1,4 @@
-import '../styles/Modal.css';
+import '../../styles/modal.css';
 
 export default function Modal({ children }) {
   return <div className='modal'>{children}</div>;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Modal from './Modal';
-import '../styles/startMenu.css';
+import '../../styles/startMenu.css';
 
-export default function startMenu() {
+export default function StartMenu() {
   return (
     <>
       <Modal>
