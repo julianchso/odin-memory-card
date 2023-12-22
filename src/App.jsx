@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import './App.css';
+import Modal from './Modal';
+import startMenu from './startMenu';
+
+import '../styles/App.css';
 
 function App() {
-  return (
-    <>
-      <h1>Pokemon Memory Game</h1>
-    </>
-  );
+  return startMenu();
 }
 
 export default App;

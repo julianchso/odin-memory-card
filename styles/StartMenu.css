@@ -1,0 +1,48 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.modal-content {
+  background-color: #f8f3f8;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal--startMenu {
+  padding: 16px;
+}
+
+.numberOfCards {
+  text-align: center;
+}
+
+.container-numberOfCards {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button-play {
+  width: 25%;
+  border: none;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
