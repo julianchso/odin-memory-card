@@ -1,5 +1,6 @@
 import React from 'react';
 import Scoreboard from './Scoreboard';
+import PlayArea from './PlayArea';
 import '../../styles/gameboard.css';
 
 export default function Gameboard() {
@@ -9,6 +10,7 @@ export default function Gameboard() {
         <div className='header'>
           <Scoreboard />
         </div>
+        <PlayArea />
       </div>
       ;
     </>
