@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from './Modal';
 import '../../styles/startMenu.css';
 
-export default function StartMenu() {
+export default function StartMenu({ startGame, numberOfCards, onChangeNumberOfCards }) {
   return (
     <>
       <Modal>
@@ -16,10 +16,19 @@ export default function StartMenu() {
                 className='numberOfCards'
                 id='numberOfCards'
                 name='numberOfCards'
+                placeholder='10'
+                value={numberOfCards}
+                onChange={onChangeNumberOfCards}
               />
             </div>
             <div className='container-button'>
-              <button className='button-play'>Play!</button>
+              <button
+                className='button-play'
+                onClick={startGame}
+                onSubmit={(e) => e.preventDefault}
+              >
+                Play!
+              </button>
             </div>
           </form>
         </div>

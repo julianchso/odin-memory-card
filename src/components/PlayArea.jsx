@@ -3,40 +3,16 @@ import '../../styles/playArea.css';
 import cardBack from '../assets/pokemon-card-back.png';
 
 export default function PlayArea() {
-  let numberOfCards = 0;
+  let numberOfCards = 10;
+  const numberOfCardsArr = [];
 
-  return (
-    <div className='playAreaContainer'>
+  for (let i = 0; i < numberOfCards; i++) {
+    numberOfCardsArr.push(
       <button>
         <img src={cardBack} alt='' className='cardBack' />
       </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-      <button>
-        <img src={cardBack} alt='' className='cardBack' />
-      </button>
-    </div>
-  );
+    );
+  }
+
+  return <div className='playAreaContainer'>{numberOfCardsArr}</div>;
 }
